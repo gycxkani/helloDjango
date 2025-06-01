@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'StatusView',
     'Http404View',
     'ErrorView',
+    'shortcutsView',
 
 
 
@@ -134,15 +135,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = '/statics/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'statics'),
+    os.path.join(BASE_DIR, 'static'),
 )
-STATIC_ROOT = os.path.join(BASE_DIR, "/statics")
+STATIC_ROOT = os.path.join(BASE_DIR, "/static")
 
-MEDIA_URL = "/medias/"
+MEDIA_URL = "/media/"
 MEDIA_DIR = (
-    os.path.join(BASE_DIR, 'medias'),
+    os.path.join(BASE_DIR, 'media'),
 )
 MEDIA_ROOT = MEDIA_DIR
 
